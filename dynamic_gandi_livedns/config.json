@@ -1,0 +1,22 @@
+{
+  "name": "Dynamic Gandi LiveDNS",
+  "version": "0.0.16",
+  "slug": "dynamic_gandi_livedns",
+  "description": "Retrieves the current public IP of this Home Assistance instance and points a DNS record to it using the Gandi LiveDNS API",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "hassio_api": "true",
+  "options": {
+    "api_key": "",
+    "domain": "",
+    "subdomain": "",
+    "update_interval": 600
+  },
+  "schema": {
+    "api_key": "str",
+    "domain": "str",
+    "subdomain": "str",
+    "update_interval": "int(0,)"
+  }
+}
